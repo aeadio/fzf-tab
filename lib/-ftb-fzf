@@ -35,7 +35,7 @@ local ret=0
 -ftb-zstyle -s fzf-pad fzf_pad || fzf_pad=2
 
 -ftb-zstyle -a debug-command debug_command && {
-  ${(eX)debug_command} $fzf_flags
+  ${(eX)debug_command} ${=fzf_flags}
   return
 }
 
